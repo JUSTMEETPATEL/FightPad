@@ -8,8 +8,7 @@ export default function InteractiveXboxController() {
   // Extract joystick axes values and ensure they are numbers
   const leftStickX = Number(joystickAxes[0]) || 0;
   const leftStickY = Number(joystickAxes[1]) || 0;
-  const leftTrigger = Number(joystickAxes[2]) || 0; // Changed from index 6 to 2
-  const rightTrigger = Number(joystickAxes[5]) || 0; // Changed from index 7 to 5
+
 
   const isButtonPressed = (buttonIndex: number) =>
     buttonsPressed.includes(buttonIndex);

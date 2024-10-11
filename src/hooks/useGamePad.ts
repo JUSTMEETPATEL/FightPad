@@ -20,7 +20,7 @@ const useGamepad = () => {
         setButtonsPressed(buttons);
 
         // Store joystick axis values (0: left stick, 1: right stick)
-        const axes = currentGamepad.axes.map(axis => axis.toFixed(2)); // Format to 2 decimal places
+        const axes = currentGamepad.axes.map(axis => parseFloat(axis.toFixed(2))); // Format to 2 decimal places and convert back to number
         setJoystickAxes(axes);
       }
 
